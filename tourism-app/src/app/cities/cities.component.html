@@ -1,0 +1,11 @@
+<div *ngFor="let city of cities" >
+    <h3 [ngClass]="{ 'green': color, 'black': !color }">{{ city.name }}</h3>
+    <ul>
+        <li>
+        {{ city.attractionSites.join(', ') }}
+        </li>
+    </ul>
+</div>
+
+
+
